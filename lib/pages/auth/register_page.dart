@@ -1,5 +1,6 @@
 import "package:chat_application/pages/auth/login_page.dart";
 import "package:chat_application/service/auth_service.dart";
+import "package:firebase_auth/firebase_auth.dart";
 import "package:flutter/gestures.dart";
 import "package:flutter/material.dart";
 import "package:chat_application/helper/helper_function.dart";
@@ -156,6 +157,9 @@ class _RegisterPageState extends State<RegisterPage> {
                                   }),
                           ],
                         )),
+                        const SizedBox(
+                          height: 10,
+                        ),
                       ],
                     )),
               ),
