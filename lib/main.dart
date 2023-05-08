@@ -2,6 +2,7 @@ import 'package:chat_application/helper/helper_function.dart';
 import 'package:chat_application/pages/auth/login_page.dart';
 import 'package:chat_application/pages/home_page.dart';
 import 'package:chat_application/shared/constants.dart';
+import 'package:chat_application/splashscreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
@@ -59,7 +60,9 @@ class _MyAppState extends State<MyApp> {
           primaryColor: Constants().primaryColor,
           scaffoldBackgroundColor: Colors.white),
       debugShowCheckedModeBanner: false,
-      home: _isSignedIn ? const HomePage() : const LoginPage(),
+      // home: _isSignedIn ? const HomePage() : const LoginPage(),
+      home: const SplashScreen()
     );
+
   }
 }
